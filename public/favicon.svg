@@ -1,0 +1,39 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1A1A1A"/>
+      <stop offset="1" stop-color="#0F0F0F"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="32" y1="12" x2="32" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD27A"/>
+      <stop offset="0.35" stop-color="#FF6B00"/>
+      <stop offset="1" stop-color="#7A1F1F"/>
+    </linearGradient>
+    <linearGradient id="inner" x1="32" y1="24" x2="32" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE9B0"/>
+      <stop offset="1" stop-color="#FF6B00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded dark tile with gold border -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg)"/>
+  <rect x="2.75" y="2.75" width="58.5" height="58.5" rx="15.25" fill="none" stroke="#D4AF37" stroke-opacity="0.55" stroke-width="1.5"/>
+
+  <!-- Outer flame -->
+  <path d="M32 10
+           C 39 20, 45 24, 45 35
+           a 13 13 0 0 1 -26 0
+           c 0 -6 3 -9 5 -12
+           c 1 4 3 6 5 6
+           c 0 -8 -3 -12 3 -19 Z"
+        fill="url(#flame)"/>
+
+  <!-- Inner flame -->
+  <path d="M32 26
+           c 4 5 7 8 7 13
+           a 7 7 0 0 1 -14 0
+           c 0 -4 2 -6 3 -8
+           c 1 2 2 3 3 3
+           c 0 -4 -3 -6 -2 -8 Z"
+        fill="url(#inner)"/>
+</svg>
